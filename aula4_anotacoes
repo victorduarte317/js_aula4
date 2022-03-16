@@ -95,7 +95,7 @@ Se você sabe - exatamente - quantas repetições irão ocorrer no laço (como e
 
 Também é possível percorrer um array com o for, fazendo com que a cada index que você encontre dentro de um array, alguma instrução vai ser executada. 
 
-Como é para CADA index, utiliza-se o for it (Não achei informações sobre esse for it)
+Como é para CADA index, utiliza-se o for each
 
 Pra percorrer nomes de atributos de objetos, utiliza-se o for in. Ele funcionará de forma que a cada atributo encontrado, uma repetição será executada.
 
