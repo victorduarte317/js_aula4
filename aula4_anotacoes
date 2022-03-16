@@ -1,0 +1,117 @@
+js é case sensitive
+
+mensagem de erro informa a linha que causou o erro
+
+comentário em linha em js: //
+
+comentário em bloco em js: /* */
+
+novos jeitos de declarar variável:
+
+let = leva em consideração aonde ela foi definida. Útil pra quando você quer que uma variável exista só em um escopo - bloco de códigos - específico.
+
+const = uma vez declarado um valor em uma variável const, esse valor nunca pode mudar - já que é constante. Aplicável sempre que existir um valor que não muda, como em uma conexão com banco de dados, por exemplo.
+
+Números em javascript - independente de serem decimais ou não - são todos do tipo Number.	
+
+Variáveis com o mesmo nome e tipo são Arrays - o conceito de armazenar mais de um valor dentro da mesma variável, indexando tais valores. Um exemplo seria a variável de index de um "for". 
+
+typeof = Retorna o tipo do dado variável
+
+instanceof = Retorna a instância do objeto
+
+Tipos de dados:
+
+booleanos = true or false
+funções = parseInt, parseFloat, entre outras. (convertem o tipo de uma variável)
+
+Variáveis em javascript são fracamente tipadas, então elas não são declaradas juntamente com seu tipo, elas podem ter o valor string convertido em um momento e um valor numérico em outro. 
+
+Operadores:
+
+"=" Operador de atribuição.
+
+"==" Operador de comparação - compara o valor de duas expressões. Retorna um valor booleano.
+
+Quando "==" é utilizado, ele vai comparar o valor das duas expressões - variáveis - ignorando o tipo delas. Então, se forem comparadas as variáveis a = 10 (number) e b = "10" (string), o console retorna true.
+
+Se precisar comparar o tipo das variáveis além do valor delas, usa-se o "==="	 
+
+"!=" Compara se os valores são diferentes
+
+"!==" Compara se os valores e tipos são diferentes
+
+
+Operadores lógicos:
+
+"&&" And. Compara se as condições são verdadeiras ao mesmo tempo. Se uma das condições for falsa, a expressão inteira é ignorada.
+
+"||" Or. Compara se uma OU a outra condição é verdadeira. Se uma das condições for verdadeira, a expressão retorna true e prossegue.
+
+"++". Operador incremental. Quando quer que toda vez que o loop passe pela variável ela receba +1 no valor. 
+
+"--". Operador decremental. Quando quer que toda vez que o loop passe pela variável ela receba -1 no valor.
+
+Controlando o fluxo do código:
+
+if (condicao) {
+
+instruçoes 
+
+}
+
+else {
+
+instrucoes
+
+}
+Se a condicao for verdadeira, vai executar um bloco de informações - as informações contidas por ele.
+
+Se for falsa, vai executar outro bloco de informações - as contidas por else.
+
+
+Quando você já sabe quais são as opções do seu código, é melhor usar outro controlador de fluxo, o "switch".
+
+Como o "if" começa a ficar muito extenso se tiver algumas opções de resultado, ele compara a variável diversas vezes. 
+
+Utilizando switch, o computador vai olhar pra variável e analisar os casos. Caso o valor seja x, vai executar a instrução declarada pra essa situação e vai parar por ali (break).
+
+Se o valor da variável difere dos valores inseridos nos casos, o console vai executar a instrução dentro de "default".
+
+"default" vai sempre ser o último caso dentro de um switch. Ele não precisa de "break" justamente por ser o último.
+
+
+Laços de repetição:
+
+utiliza-se o "for".
+
+For (valor inicial; valor final; incremento) {
+
+instrucoes
+
+}
+
+Se você sabe - exatamente - quantas repetições irão ocorrer no laço (como em uma tabuada, por exemplo), utiliza-se o for com as 3 instruções: valor inicial, valor final, incremento.
+
+Também é possível percorrer um array com o for, fazendo com que a cada index que você encontre dentro de um array, alguma instrução vai ser executada. 
+
+Como é para CADA index, utiliza-se o for it (Não achei informações sobre esse for it)
+
+Pra percorrer nomes de atributos de objetos, utiliza-se o for in. Ele funcionará de forma que a cada atributo encontrado, uma repetição será executada.
+
+Podemos usar "break" pra interromper o laço de repetição caso algo aconteça. Normalmente, ele é utilizado dentro de um "if" que, por sua vez, está dentro do "for".
+
+Supondo que uma ação esteja sendo executada pra percorrer um array de 0 a 100, mas é preciso pular o número 28. 
+
+Pra isso, é utilizado o "continue", para que o programa ignore aquela instrução e vá para a próxima.
+
+Como controladores de fluxo ainda temos "while" e "do while".
+
+
+A tabuada foi feita utilizando template string:
+
+O template string é um recurso que permite que você escreva um texto e coloque comandos dentro desse texto.
+
+Esse recurso é declarado pelas crases (` `). 
+
+Pra utilizar operadores do javascript, utiliza-se $. Todo o resto que estiver contido pelas crases e não for instrução de js vai ser interpretado como string.
