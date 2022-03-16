@@ -114,4 +114,4 @@ O template string é um recurso que permite que você escreva um texto e coloque
 
 Esse recurso é declarado pelas crases (` `). 
 
-Pra utilizar operadores do javascript, utiliza-se $. Todo o resto que estiver contido pelas crases e não for instrução de js vai ser interpretado como string.
+Pra utilizar operadores do javascript, utiliza-se ${x}. Todo o resto que estiver contido pelas crases e não for instrução de js vai ser interpretado como string.
